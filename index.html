@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="box">
+            <input type="text" class="screen" id="screen">
+        </div>
+        <div class="box" onclick="drawScreen(7)" >7</div>
+        <div class="box" onclick="drawScreen(8)">8</div>
+        <div class="box" onclick="drawScreen(9)">9</div>
+        <div class="box operacion" onclick="operation('suma')">+</div>
+        <div class="box" onclick="drawScreen(4)">4</div>
+        <div class="box" onclick="drawScreen(5)">5</div>
+        <div class="box" onclick="drawScreen(6)">6</div>
+        <div class="box operacion" onclick="operation('resta')">-</div>
+        <div class="box" onclick="drawScreen(1)">1</div>
+        <div class="box" onclick="drawScreen(2)">2</div>
+        <div class="box" onclick="drawScreen(3)">3</div>
+        <div class="box operacion" onclick="operation('multiplicacion')">*</div>
+        <div class="box">CE</div>
+        <div class="box" onclick="drawScreen(0)">0</div>
+        <div class="box" onclick="doOperation()">=</div>
+        <div class="box operacion"  onclick="operation('division')">/</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
